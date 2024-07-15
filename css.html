@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #div1{
+            margin: 0 auto;
+            width: 1100px;
+            height: 400px;
+            border: 2px solid black;
+        }
+        .manu{
+            width: 1100px;
+            height: 50px;
+        }
+        .manu ul{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .manu ul li{
+            list-style: none;
+            float: left;
+            width: 150px;
+            background-color: aquamarine;
+            margin-right: 10px;
+        }
+        .manu ul li a{
+            height: 35px;
+            padding-top: 15px;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            font-size: 19px;
+            font-weight: 100;
+        }
+
+        .content{
+            width: 340px;
+            height: 340px;
+            border: 1px solid rgb(0, 0, 0);
+            float: left;
+        }
+        .content{
+            margin-right: 22px;
+        }
+        .bg-red{
+            background-color: rgb(233, 81, 81);
+        } 
+        .bg-yellow{
+            background-color: rgb(133, 226, 169);
+        }
+        .bg-green{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <nav class="manu">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">contac</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content content-margin bg-red" >
+            1
+        </div>
+        <div class="content content-margin bg-yellow">
+            2
+        </div>
+        <div class="content content-margin bg-green">
+            3
+        </div>
+    </div>
+</body>
+</html>
