@@ -5,81 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style type="text/css">
-        #div1{
+        /* ID Selector */
+        #dv1{
             margin: 0 auto;
             width: 1100px;
             height: 400px;
-            border: 2px solid black;
+            border: 1px solid #000;
         }
-        .manu{
+        .menu{
             width: 1100px;
             height: 50px;
         }
-        .manu ul{
+        .menu ul{
             margin: 0;
             padding: 0;
-            
         }
-        .manu ul li{
+        .menu ul li{
             list-style: none;
             float: left;
             width: 150px;
-            background-color: aquamarine;
+            background-color: crimson;
             margin-right: 10px;
         }
-        .manu ul li a{
-            height: 35px;
-            padding-top: 15px;
+        .menu ul li a{
+            height: 37px;
+            padding-top: 13px;
             display: block;
             text-align: center;
+            color: #fff;
             text-decoration: none;
             font-size: 19px;
-            font-weight: 100;
+            font-weight: 500;
+            
         }
-
+        .menu ul li a:hover, .active{
+            background-color: brown;
+        }
+        /* Class selector */
         .content{
-            width: 340px;
-            height: 340px;
-            border: 1px solid rgb(0, 0, 0);
+            width: 350px;
+            height: 350px;
+            border: 1px solid #000;
             float: left;
         }
-        .content{
+        .content-margin{
             margin-right: 22px;
         }
         .bg-red{
-            background-color: rgb(233, 81, 81);
-        } 
+            background-color: rgb(255, 221, 221);
+        }
         .bg-yellow{
-            background-color: rgb(133, 226, 169);
+            background-color: rgb(255, 255, 167);
         }
         .bg-green{
-            background-color: chartreuse;
+            background-image: linear-gradient(to left, red, yellow);
+        }
+        .body-text{
+            margin: 0;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 19px;
+            text-align: justify;
         }
     </style>
 </head>
 <body>
-    <div id="div1">
-        <nav class="manu">
+    <div id="dv1">
+        <nav class="menu">
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="css3.html" class="active">Home</a>
                 </li>
                 <li>
                     <a href="#">About</a>
                 </li>
                 <li>
-                    <a href="#">contac</a>
+                    <a href="#">Contact</a>
                 </li>
             </ul>
         </nav>
-        <div class="content content-margin bg-red" >
-            1
+        <div class="content content-margin bg-red">
+            <p class="body-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dicta iure optio natus. Veritatis, sit officia accusantium eligendi repudiandae aliquam? Perferendis nostrum itaque quod quibusdam illo consequuntur vero unde aperiam facere eaque ipsa a sunt, culpa sequi? Rem laboriosam eos nulla modi, fuga animi provident quae quam laborum obcaecati optio.
+            </p>
         </div>
         <div class="content content-margin bg-yellow">
-            2
+            <ul>
+                <li>Kolkata</li>
+                <li>Delhi</li>
+                <li>Mumbai</li>
+            </ul>
         </div>
-        <div class="content content-margin bg-green">
-            3
+        <div class="content bg-green">
+            3  
         </div>
     </div>
 </body>
